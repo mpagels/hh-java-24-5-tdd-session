@@ -58,4 +58,15 @@ public class FizzBuzzTest {
         String expected = "Buzz";
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    void expectFizzBuzz_whenGivenNumber15() {
+        //GIVEN
+        int number = 15;
+        //WHEN
+        String actual= FizzBuzz.calculate(number);
+        //THEN
+        String expected = "FizzBuzz";
+        Assertions.assertEquals(expected, actual);
+    }
 }
