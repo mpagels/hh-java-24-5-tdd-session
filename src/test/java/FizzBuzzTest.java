@@ -14,4 +14,48 @@ public class FizzBuzzTest {
         String expected = "1";
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    void expect2_whenGivenNumber2() {
+        //GIVEN
+        int number = 2;
+        //WHEN
+        String actual= FizzBuzz.calculate(number);
+        //THEN
+        String expected = "2";
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    void expectFizz_whenGivenNumber3() {
+        //GIVEN
+        int number = 3;
+        //WHEN
+        String actual= FizzBuzz.calculate(number);
+        //THEN
+        String expected = "Fizz";
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    void expect4_whenGivenNumber4() {
+        //GIVEN
+        int number = 4;
+        //WHEN
+        String actual= FizzBuzz.calculate(number);
+        //THEN
+        String expected = "4";
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    void expectBuzz_whenGivenNumber5() {
+        //GIVEN
+        int number = 5;
+        //WHEN
+        String actual= FizzBuzz.calculate(number);
+        //THEN
+        String expected = "Buzz";
+        Assertions.assertEquals(expected, actual);
+    }
 }
